@@ -27,3 +27,13 @@ class Employee(db.Model):
 
     def __repr__(self):
         return f"<Employee id={self.id}, name={self.name}, salary={self.salary}>"
+
+class Department(db.Model):
+    __tablename__ = 'departments'
+
+    id = db.Column(db.interger, primary_key=True)
+    name = db.Column(db.String, nullable=False)
+    location = db.colmun(db.String)
+
+def __repr__(self):
+    return f'<Department {self.id}, {self.name}, {self.address}'    
